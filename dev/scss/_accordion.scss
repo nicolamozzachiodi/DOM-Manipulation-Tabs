@@ -1,0 +1,51 @@
+.accordion {
+    width: 90%;
+    max-width: 40em;
+    margin: 2em auto;
+    font-size: 14px;
+    letter-spacing: 0.075em;
+    &__header{
+        border-radius: 5px;
+        background-color: #eeeeee;
+        & a {
+            padding: 0.5em 1em;
+            display: block;
+            color: $black;
+            font-size: 0.75em;
+            vertical-align: middle;
+            & svg {
+                vertical-align: middle;
+                transition: 0.5s ease all;
+            }
+        }
+        &.is-active {
+            max-height: 6em;
+            & a {
+                
+                font-size: 0.75em;
+                vertical-align: middle;
+                & svg {
+                    vertical-align: middle;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+
+    }
+    &__panel {
+        max-height: 0;
+        overflow: hidden;
+        transition: all .5s ease;
+        &.is-active {
+            max-height: 6em;
+            & a {
+                font-size: 0.75em;
+                vertical-align: middle;
+                & svg {
+                    vertical-align: middle;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+}

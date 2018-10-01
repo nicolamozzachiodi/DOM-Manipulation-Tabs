@@ -7,17 +7,17 @@
         <link rel = "stylesheet" href="css/global.css">
     </head>
     <body>
-        <h1>DOM Manipulation: Tabs</h1>
+        <h1 class="text-center">DOM Manipulation: Tabs</h1>
         
         <div class="tabs">
             <ul aria-role="tabs" class="tabs__list">
-                <li class="tabs__item"><a href="#privacy">Privacy</a></li>
+                <li class="tabs__item is-active"><a href="#privacy">Privacy</a></li>
                 <li class="tabs__item"><a href="#cookies">Cookies</a></li>
                 <li class="tabs__item"><a href="#spedizioni">Spedizioni</a></li>
                 <li class="tabs__item"><a href="#resi">Resi</a></li>
             </ul>
             <div class="tabs__panels">
-                <div id="privacy" class="tabs__panel  is-active"> 
+                <div id="privacy" class="tabs__panel is-active"> 
                     <h2 class="tabs__title">Privacy</h2>
                     <p class="tabs__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quidem cumque modi earum magnam quod ipsa soluta, minima, explicabo odio neque itaque? Inventore, magni? Voluptatum dicta omnis amet quidem error?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, sit?</p>
                 </div>
@@ -35,7 +35,66 @@
                 </div>
             </div>
         </div>
-
+        <div class="accordion">
+            <h3 class="accordion__header is-active">
+                <a href="#accordion__privacy" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+                        Privacy
+                </a>
+            </h3>
+            <div class="accordion__panel is-active" id="accordion__privacy">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quibusdam tenetur nemo at quod rerum voluptatum rem explicabo blanditiis eos omnis, autem ipsum assumenda. Error harum iste eveniet fugit aspernatur!</p>
+            </div>
+            <h3 class="accordion__header ">
+                <a href="#accordion__cookies" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+                        Cookies
+                </a>
+            </h3>
+            <div class="accordion__panel" id="accordion__cookies">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quibusdam tenetur nemo at quod rerum voluptatum rem explicabo blanditiis eos omnis, autem ipsum assumenda. Error harum iste eveniet fugit aspernatur!</p>
+            </div>
+            <h3 class="accordion__header">
+                <a href="#accordion__spedizioni" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+                    Spedizioni
+                </a>
+            </h3>
+            <div class="accordion__panel" id="accordion__spedizioni">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quibusdam tenetur nemo at quod rerum voluptatum rem explicabo blanditiis eos omnis, autem ipsum assumenda. Error harum iste eveniet fugit aspernatur!</p>
+            </div>
+            <h3 class="accordion__header">
+                <a href="#accordion__resi" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+                        Resi
+                </a>
+            </h3>
+            <div class="accordion__panel" id="accordion__resi">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quibusdam tenetur nemo at quod rerum voluptatum rem explicabo blanditiis eos omnis, autem ipsum assumenda. Error harum iste eveniet fugit aspernatur!</p>
+            </div>
+        </div>
+        <h2>Loader</h2>
+        <button class="button">Load</button>
+        <button class="button" onclick="openModal()">cookies</button>
+        <div class="loader ">
+            <div class="loader__background">
+                <div class="loader__icon">
+                    <img src="img/loader.svg"/>
+                </div>
+            </div>
+        </div>
+                <div class="modal">
+                    <div class="modal__background">
+                        <div class="modal__box">
+                            <button onclick="closeModal()" class="modal__close">&times;</button>
+                            <h4 class="modal__title">Termini e Condizioni: Cookies</h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati rem eaque consequatur saepe illo facilis facere maxime accusantium maiores velit.
+                            </p>
+                            <button onclick="closeModal()"class="modal__button">Accetta</button>
+                        </div>
+                    </div>
+                </div>
         <script src="js/main.js"></script>
     </body>
 </html>

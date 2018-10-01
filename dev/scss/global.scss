@@ -17,5 +17,8 @@ $include-fonts: true;
 // @include foundation-tooltip;
 
 @import "variables"; 
-@import "tabs";
 @import "common";
+@import "tabs";
+@import "accordion";
+@import "loader";
+@import "modal"
