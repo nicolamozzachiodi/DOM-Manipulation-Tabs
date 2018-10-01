@@ -1,0 +1,18 @@
+.tabs {
+    &__item {
+        &.-is-active {
+            text-decoration: underline;
+        }
+    }
+    &__panel {
+        display: none;
+        &.is-active {
+            display: block; 
+        }
+    }
+    &__list, &__item {
+        display: inline;
+        margin-right: 4px;
+        text-align: left;
+    }
+} 

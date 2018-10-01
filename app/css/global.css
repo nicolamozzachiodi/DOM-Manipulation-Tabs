@@ -3163,3 +3163,20 @@ ul.no-bullet, ol.no-bullet {
   .large-flex-dir-column-reverse {
     -ms-flex-direction: column-reverse;
         flex-direction: column-reverse; } }
+
+.tabs__item.-is-active {
+  text-decoration: underline; }
+
+.tabs__panel {
+  display: none; }
+  .tabs__panel.is-active {
+    display: block; }
+
+.tabs__list, .tabs__item {
+  display: inline;
+  margin-right: 4px;
+  text-align: left; }
+
+body {
+  background-color: #fafafa;
+  color: #1b1b1b; }
